@@ -1,0 +1,190 @@
+@import url('https://fonts.google.com/specimen/Karla');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', Arial;
+}
+
+:root {
+    --Cyan: hsl(179, 62%, 43%);
+    --BrightYellow: hsl(71, 73%, 54%);
+    --LightGray: hsl(204, 43%, 93%);
+    --GrayishBlue: hsl(218, 22%, 67%);
+}
+
+body {
+    background-color: var(--GrayishBlue);
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card {
+    width: 50vw;
+    background-color: var(--LightGray);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.intro {
+    width: 100%;
+    height: auto;
+    padding: 5% 8%;
+    text-align: start;
+}
+
+.intro h1 {
+    color: var(--Cyan);
+    font-weight: 700;
+
+}
+
+.intro h2 {
+    color: var(--BrightYellow);
+    font-weight: 400;
+    margin: 20px 0 10px 0;
+}
+
+.intro p {
+    color: var(--GrayishBlue);
+    font-size: 1em;
+    margin: 5px;
+    word-wrap: break-word;
+    line-height: 1.5;
+}
+
+.info {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.pricing {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    background-color: var(--Cyan);
+    padding: 4%;
+}
+
+.pricing h2 {
+    color: var(--LightGray);
+    font-weight: 400;
+}
+
+.pricing span::before {
+    color: var(--LightGray);
+    content: '$29';
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+.pricing span {
+    color: var(--GrayishBlue);
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.pricing p {
+    color: var(--GrayishBlue);
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.pricing button {
+    width: 100%;
+    padding: 5%;
+    font-weight: 700;
+    color: var(--LightGray);
+    background-color: var(--BrightYellow);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.services {
+    width: 50%;
+    text-align: start;
+    background-color: hsla(179, 62%, 43%, 0.9);
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.services h2 {
+    color: var(--LightGray);
+    font-weight: 400;
+
+}
+
+.services ul {
+    list-style: none;
+    color: var(--GrayishBlue);
+    font-size: 1em;
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 768px) {
+    main {
+        height: max-content;
+        padding: 5%;
+    }
+
+    .info {
+        flex-direction: column;
+    }
+
+    .pricing {
+        width: 100%;
+        height: 50vh;
+        padding: 5%;
+    }
+
+    .services {
+        width: 100%;
+        padding: 5%;
+        gap: 20px;
+    }
+
+}
+@media only screen and (max-width: 375px) {
+    main {
+        height: max-content;
+        padding: 0%;
+    }
+    .card{
+        width: 90%;
+        margin: 50px 0;
+    }
+
+    .info {
+        flex-direction: column;
+    }
+
+    .pricing {
+        width: 100%;
+        height: 50vh;
+        padding: 5%;
+    }
+
+    .services {
+        width: 100%;
+        padding: 5%;
+        gap: 20px;
+    }
+
+}
