@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/single-price-grid-component-frontend-mentor-gxiIZgV20w)
-- Live Site URL: [Add live site URL here](https://arjuno-008.github.io/Single-price-grid-component-Frontend-mentor/)
+- Solution URL: [Click here](https://www.frontendmentor.io/solutions/single-price-grid-component-frontend-mentor-gxiIZgV20w)
+- Live Site URL: [Click here](https://arjuno-008.github.io/Single-price-grid-component-Frontend-mentor/)
 
 
 ## Author
